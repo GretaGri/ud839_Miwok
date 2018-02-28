@@ -13,7 +13,7 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
-        //Create a string array with ten words numbers from 1 to 10.
+        //Create a string ArrayList with ten words numbers from 1 to 10.
         ArrayList<String> words = new ArrayList<>();
         words.add("one");
         words.add("two");
@@ -27,7 +27,7 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("ten");
 
 
-        //Print every element of the words array to the Android logs.
+        //Print every element of the words ArrayList to the Android logs.
         Log.v("NumbersActivity","Word at index 0: "+ words.get(0));
         Log.v("NumbersActivity","Word at index 1: "+ words.get(1));
         Log.v("NumbersActivity","Word at index 2: "+ words.get(2));
