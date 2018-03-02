@@ -30,17 +30,13 @@ public class NumbersActivity extends AppCompatActivity {
 
 LinearLayout rootView = findViewById(R.id.rootView);
 
-//place new textViews in numbers activity.
+//place new textViews in numbers activity using while loop to avoid repetition.
+        int index = 0;
+        while (index<10){
         TextView wordView = new TextView(this);
-        wordView.setText(words.get(0));
+        wordView.setText(words.get(index));
         rootView.addView(wordView);
+        index++;}
 
-        TextView wordView2 = new TextView(this);
-        wordView2.setText(words.get(1));
-        rootView.addView(wordView2);
-
-        TextView wordView3 = new TextView(this);
-        wordView3.setText(words.get(2));
-        rootView.addView(wordView3);
     }
 }
