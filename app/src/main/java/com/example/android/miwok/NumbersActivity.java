@@ -31,16 +31,15 @@ public class NumbersActivity extends AppCompatActivity {
         // Find the root view so we can add child views to it.
         LinearLayout rootView = findViewById(R.id.rootView);
 
-        // Create a variable to keep track of the current index position.
-        int index = 0;
-
-        // Place new textViews in numbers activity using while loop to avoid repetition.
+        // Place new textViews in numbers activity using for loop to avoid repetition.
+        // Create a variable to keep track of the current index position
         // Keep looping as long as the current index position is less than the length of the list.
-        while (index < words.size()) {
+        // The index variable keeps track of our current position in the list and
+        // increments by 1 each time the code in the loop is executed.
+        for (int index = 0; index < words.size();index++) {
             TextView wordView = new TextView(this); //Create a new TextView
             wordView.setText(words.get(index)); //Set the text to be the word at the current index
             rootView.addView(wordView); //Add this TextView as the another child to the root view of this layout
-            index++; //Increment the index variable by 1
         }
 
     }
