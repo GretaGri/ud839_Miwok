@@ -3,7 +3,9 @@ package com.example.android.miwok;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -32,10 +34,10 @@ public class NumbersActivity extends AppCompatActivity {
 
         //Create an Array adapter.
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
-        //Find the List view so we can set Adapter to it.
-        ListView listView = findViewById(R.id.list);
-        //Set adapter to listView.
-        listView.setAdapter(itemsAdapter);
+        //Find the GridView so we can set Adapter to it.
+        GridView gridView = findViewById(R.id.grid);
+        //Set adapter to GridView.
+        gridView.setAdapter(itemsAdapter);
 
         }
 
