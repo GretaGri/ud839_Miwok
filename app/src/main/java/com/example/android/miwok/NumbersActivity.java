@@ -34,10 +34,10 @@ public class NumbersActivity extends AppCompatActivity {
 
         //Create an Array adapter.
         ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
-        //Find the GridView so we can set Adapter to it.
-        GridView gridView = findViewById(R.id.grid);
-        //Set adapter to GridView.
-        gridView.setAdapter(itemsAdapter);
+        //Find the ListView so we can set Adapter to it.
+        ListView listView = findViewById(R.id.list);
+        //Set adapter to ListView.
+        listView.setAdapter(itemsAdapter);
 
         }
 
