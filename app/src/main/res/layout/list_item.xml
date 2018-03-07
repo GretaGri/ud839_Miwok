@@ -8,14 +8,14 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/list_item1"
+        android:id="@+id/list_item_miwok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="lutti"
         />
 
     <TextView
-        android:id="@+id/list_item2"
+        android:id="@+id/list_item_default"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="one"
