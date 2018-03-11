@@ -16,7 +16,9 @@ public class Word {
     private String mMiwokTranslation;
 
     //Integer value for resource id of image corresponding the word
-    private int mImageResourceId;
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
      * Constructs a new Word object with initial values for Default translation, Miwok translation and image resource.
@@ -71,4 +73,9 @@ public class Word {
         return mImageResourceId;
     }
 
+    /**
+     * Returns whether or not there is an image for this word
+     */
+    public boolean hasImage(){return mImageResourceId != NO_IMAGE_PROVIDED;}
 }
+
