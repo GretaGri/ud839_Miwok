@@ -29,6 +29,7 @@ public class ColorsActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.list);
         //Set adapter to ListView.
         listView.setAdapter(adapter);
+        listView.setBackgroundColor(getResources().getColor(R.color.category_colors));
 
     }
 

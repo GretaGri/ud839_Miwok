@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:minHeight="@dimen/list_item_height"
-    android:background="@color/tan_background">
+    android:minHeight="@dimen/list_item_height">
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
+        android:background="@color/tan_background"
         android:layout_gravity="center"
         android:src="@mipmap/ic_launcher"/>
 
@@ -20,7 +20,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/category_numbers"
     android:paddingLeft="@dimen/word_left_padding">
 
     <TextView
