@@ -24,13 +24,11 @@ public class ColorsActivity extends AppCompatActivity {
         words.add(new Word("mustard yellow","chiwiiṭә",R.drawable.color_mustard_yellow));
 
         //Create an WordAdapter adapter.
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_colors);
         //Find the ListView so we can set Adapter to it.
         ListView listView = findViewById(R.id.list);
         //Set adapter to ListView.
         listView.setAdapter(adapter);
-        listView.setBackgroundColor(getResources().getColor(R.color.category_colors));
-
     }
 
 }

@@ -27,12 +27,11 @@ public class FamilyActivity extends AppCompatActivity {
 
 
         //Create an WordAdapter adapter.
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_family);
         //Find the ListView so we can set Adapter to it.
         ListView listView = findViewById(R.id.list);
         //Set adapter to ListView.
         listView.setAdapter(adapter);
-        listView.setBackgroundColor(getResources().getColor(R.color.category_family));
 
     }
 
