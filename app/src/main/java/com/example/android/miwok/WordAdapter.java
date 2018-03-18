@@ -1,6 +1,7 @@
 package com.example.android.miwok;
 
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -61,7 +63,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         // Find the ImageView in the list_item.xml layout with the ID image
         ImageView image = listItemView.findViewById(R.id.image);
-        // Get the image resource ID from the current Word object andset the image to image
+        // Get the image resource ID from the current Word object and set the image to image
         // Check if an image is provided for this word or not
          if (currentWord.hasImage()) {
          // If an image is available, display the provided image based on the resource ID
@@ -78,6 +80,12 @@ public class WordAdapter extends ArrayAdapter<Word> {
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
         textContainer.setBackgroundColor(color);
+
+        //Find button play in the list_item.xml layout with the ID play_button
+        ImageView play = listItemView.findViewById(R.id.play_button);
+        //Set Image button background color to main background color.
+        play.setBackgroundColor(color);
+
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView

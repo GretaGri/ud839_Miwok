@@ -20,6 +20,9 @@ public class Word {
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    //Integer value for resource id of media file corresponding the word
+    private int mMediaResourceId;
+
     /**
      * Constructs a new Word object with initial values for Default translation, Miwok translation and image resource.
      *
@@ -27,9 +30,10 @@ public class Word {
      *                           (such as English)
      * @param miwokTranslation   is the word in the Miwok language
      */
-    public Word(String defaultTranslation, String miwokTranslation) {
+    public Word(String defaultTranslation, String miwokTranslation, int mediaResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mMediaResourceId = mediaResourceId;
     }
     /**
      * Constructs a new Word object with initial values for Default translation, Miwok translation and image resource.
@@ -39,11 +43,14 @@ public class Word {
      * @param miwokTranslation   is the word in the Miwok language
      *
      * @param imageResourceId  is the resource id of the image corresponding the word
+     *
+     * @param mediaResourceId  is the resource id of the media file corresponding the word
      */
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId) {
+    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int mediaResourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceId = imageResourceId;
+        mMediaResourceId = mediaResourceId;
     }
 
     /**
@@ -71,6 +78,15 @@ public class Word {
      */
     public int getImageResourceId() {
         return mImageResourceId;
+    }
+
+    /**
+     * Gets the media resource id in the Word.
+     *
+     * @return current media file corresponding with the Word.
+     */
+    public int getMediaResourceId() {
+        return mMediaResourceId;
     }
 
     /**
