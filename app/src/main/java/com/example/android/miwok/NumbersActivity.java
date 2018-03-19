@@ -3,6 +3,7 @@ package com.example.android.miwok;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -46,6 +47,8 @@ public class NumbersActivity extends AppCompatActivity {
                 currentWordMedia = words.get(position).getMediaResourceId();
                 player = MediaPlayer.create(NumbersActivity.this, currentWordMedia);
                 player.start();
+                Word word = words.get(position);
+                Log.v ("NumbersActivity", "Current word: " + word);
             }
         });
         }

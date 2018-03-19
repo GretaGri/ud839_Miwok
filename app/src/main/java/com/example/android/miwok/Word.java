@@ -93,5 +93,15 @@ public class Word {
      * Returns whether or not there is an image for this word
      */
     public boolean hasImage(){return mImageResourceId != NO_IMAGE_PROVIDED;}
+
+    @Override
+    public String toString() {
+        return "Word{" +
+                "mDefaultTranslation='" + mDefaultTranslation + '\'' +
+                ", mMiwokTranslation='" + mMiwokTranslation + '\'' +
+                ", mImageResourceId=" + mImageResourceId +
+                ", mMediaResourceId=" + mMediaResourceId +
+                '}';
+    }
 }
 
