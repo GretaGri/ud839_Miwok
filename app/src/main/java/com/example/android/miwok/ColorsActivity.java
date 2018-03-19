@@ -10,7 +10,9 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class ColorsActivity extends AppCompatActivity {
-    /** Handles playback of all the sound files */
+    /**
+     * Handles playback of all the sound files
+     */
     private MediaPlayer player;
     //The link to the audio resource associated with the current word
     private int currentWordMedia;
@@ -68,6 +70,7 @@ public class ColorsActivity extends AppCompatActivity {
             }
         });
     }
+
     /**
      * Clean up the media player by releasing its resources.
      */
@@ -83,5 +86,11 @@ public class ColorsActivity extends AppCompatActivity {
             // is not configured to play an audio file at the moment.
             player = null;
         }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releaseMediaPlayer();
     }
 }
