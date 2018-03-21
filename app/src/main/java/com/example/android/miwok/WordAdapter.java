@@ -75,11 +75,11 @@ public class WordAdapter extends ArrayAdapter<Word> {
          image.setVisibility(View.GONE);
          }
         // Set the theme color for the list item
-        View textContainer = listItemView.findViewById(R.id.text_container);
+        View listItemLayout = listItemView.findViewById(R.id.list_item_layout);
         // Find the color that the resource ID maps to
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
-        textContainer.setBackgroundColor(color);
+        listItemLayout.setBackgroundColor(color);
 
         //Find button play in the list_item.xml layout with the ID play_button
         ImageView play = listItemView.findViewById(R.id.play_button);
