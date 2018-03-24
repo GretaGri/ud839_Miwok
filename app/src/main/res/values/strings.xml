@@ -31,4 +31,7 @@
     <string name="phrases_name">Phrases</string>
     <string name="colors_name">Colors</string>
     <string name="family_name">Family Members</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
