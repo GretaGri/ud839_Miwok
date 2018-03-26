@@ -135,7 +135,7 @@ public class NumbersFragment extends Fragment {
                     player.start();
 
                     Word word = words.get(position);
-                    Log.v("NumbersActivity", "Current word: " + word);
+                    Log.v("NumbersFragment", "Current word: " + word);
                     // Setup a listener on the media player, so that we can stop and release the
                     // media player once the sound has finished playing.
                     player.setOnCompletionListener(mOnCompletionListener);
