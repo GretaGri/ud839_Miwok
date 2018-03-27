@@ -25,10 +25,7 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabGravity="center"
-        app:tabIndicatorColor="@color/text_color"
-        app:tabSelectedTextColor="@color/text_color"
-        app:tabTextColor="@color/tab_text_color" />
+        style="@style/CategoryTab"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
