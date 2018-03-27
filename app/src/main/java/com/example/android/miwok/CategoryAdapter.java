@@ -13,6 +13,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     //Context of the app
     private Context mContext;
 
+
     //@param fm is the fragment manager that will keep each fragment's state in the adapter
     //across swipes.
     //@param context is the context of the app.
@@ -44,14 +45,10 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         // Generate title based on item position
-        if (position == 0) {
-            return mContext.getString(R.string.category_numbers);
-        } else if (position == 1) {
-            return mContext.getString(R.string.category_family);
-        } else if (position == 2) {
-            return mContext.getString(R.string.category_colors);
-        } else {
-            return mContext.getString(R.string.category_phrases);
-        }
+        String tabTitles[] = new String[] { mContext.getString(R.string.category_numbers),
+                mContext.getString(R.string.category_family),
+                mContext.getString(R.string.category_colors),
+                mContext.getString(R.string.category_phrases)};
+        return tabTitles[position];
     }
 }
